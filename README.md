@@ -1,9 +1,9 @@
-# memedroid
+# memedroid-scrapper
 
 Example usage
 
 ```js
-const memedroid = require("memedroid");
+const memedroid = require("memedroid-scrapper");
 
 // you can specify any valid memedroid URL
 // examples:
