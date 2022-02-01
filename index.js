@@ -19,7 +19,7 @@ module.exports.getMemes = async (url = `https://es.memedroid.com/memes/top/day`)
 
         let image = meme.split(`<img src=`).map(src => {
             return src.split(`"`)[1].split(`"`)[0];
-        });
+        }).filter(m => m.startsWith("http"));
         image.shift();
 
         let id = meme.split(`"article-item-`)[1]?.split(`"`)[0];
